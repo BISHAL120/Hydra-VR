@@ -1,0 +1,70 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.menu {
+    display: flex;
+    column-gap: 40px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.headrer-btn {
+    display: flex;
+    column-gap: 38px;
+}
+
+.header-btn-1 button {
+    width: 154px;
+    height: 48px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: transparent;
+    border-radius: 40px;
+    border: 2px solid #FFF;
+    transition: 0.3s ease;
+}
+
+.header-btn-1 button:hover {
+    background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+    border: none;
+    margin-top: 5px;
+    border: 2px solid #FFF;
+}
+
+.header-btn-2 button {
+    width: 154px;
+    height: 48px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: transparent;
+    border-radius: 40px;
+    border: 2px solid #FFF;
+    transition: 0.3s ease;
+}
+
+.header-btn-2 button:hover {
+    background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+    border: none;
+    margin-top: 5px;
+    border: 2px solid #FFF;
+}

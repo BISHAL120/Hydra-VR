@@ -5,6 +5,10 @@
     padding: 30px 0;
 }
 
+.mobile-header {
+    display: none;
+}
+
 .icon {
     display: flex;
     align-items: center;
@@ -40,14 +44,22 @@
     background-color: transparent;
     border-radius: 40px;
     border: 2px solid #FFF;
-    transition: 0.3s ease;
+}
+
+.header-btn-1 {
+    width: 154px;
+    height: 48px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: transparent;
+    border-radius: 40px;
+    border: 2px solid #FFF;
 }
 
 .header-btn-1 button:hover {
     background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
     border: none;
-    margin-top: 5px;
-    border: 2px solid #FFF;
 }
 
 .header-btn-2 button {
@@ -59,12 +71,97 @@
     background-color: transparent;
     border-radius: 40px;
     border: 2px solid #FFF;
-    transition: 0.3s ease;
+}
+
+.header-btn-2 {
+    width: 154px;
+    height: 48px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: transparent;
+    border-radius: 40px;
+    border: 2px solid #FFF;
 }
 
 .header-btn-2 button:hover {
     background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
     border: none;
-    margin-top: 5px;
-    border: 2px solid #FFF;
+}
+
+@media only screen and (max-width:1080px) {
+    /* 
+    .main {
+        display: none;
+    } */
+
+    .header {
+        display: none;
+    }
+
+    .mobile-header {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .headrer-btn {
+        flex-direction: column;
+    }
+
+
+    /* ---------------------- Mobile menu animation 1 ----------------------- */
+
+    .menu {
+        position: absolute;
+        top: 100px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 0;
+        height: 0;
+        transform: scaleY(0);
+        z-index: 2;
+        transform-origin: top;
+        transition: opacity 0.7s ease, height 0.7s ease, transform 0.7s ease;
+        background: radial-gradient(2900.76% 50.13% at 50% 53.89%, rgba(58, 52, 86, 0.78) 0%, #211E2E 100%);
+    }
+
+    .menu.active {
+        opacity: 1;
+        height: 345px;
+        transform: scaleY(1);
+        z-index: 2;
+        padding: 25px 0;
+        width: 100%;
+    }
+
+    /* --------------------------------- Mobile menu animation ----------------- 2 */
+
+    /* .menu {
+        position: absolute;
+        top: -300px;
+        left: 0;
+        right: 0;
+        transition: 0.7s ease;
+        background: radial-gradient(2900.76% 50.13% at 50% 53.89%, rgba(58, 52, 86, 0.70) 0%, #211E2E 100%);
+    }
+
+    .menu.active {
+        z-index: 2;
+        padding: 25px 0;
+        width: 100%;
+        height: 345px;
+        top: 100px;
+        left: 0;
+        right: 0;
+    } */
+
+
 }

@@ -589,6 +589,10 @@ input[ type="tel"] {
 
     /* ------------------------------------------ Hero Section 1 ------------------------------- */
 
+    .hero-section-1 {
+        overflow: hidden;
+    }
+
     .section1-svg3 {
         top: -10%;
         right: -18%;

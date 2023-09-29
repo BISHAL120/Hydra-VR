@@ -113,6 +113,14 @@
         flex-direction: column;
     }
 
+    .header-btn-1 {
+        border: 2px solid #fff;
+    }
+
+    .header-btn-2 {
+        border: 2px solid #fff;
+    }
+
 
     /* ---------------------- Mobile menu animation 1 ----------------------- */
 
